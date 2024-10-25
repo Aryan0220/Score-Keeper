@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const SignUpPage = () => {
   return (
-    <div className=" h-1/2 flex flex-col justify-center items-center text-center">
+    <div className="h-1/2 flex flex-col justify-center items-center text-center">
       <div className="border border-input bg-card space-y-6 rounded-2xl flex flex-col justify-center items-center">
         <div className="flex flex-col px-12 pt-6">
           <h3 className="text-2xl font-bold">Sign Up to ScoreKeeper</h3>

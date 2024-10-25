@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import "./globals.css";
+import Navbar from "./_components/navbar";
+import Footer from "./_components/footer";
 
 export const metadata: Metadata = {
   title: "ScoreKeeper",
@@ -14,9 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="h-[100vh]">
+      <body>
+        <Navbar />
         {children}
-        <p className="bg-card py-2 absolute bottom-0 w-full text-center">Made by <Link className="text-indigo-400/80" href="https://github.com/Aryan0220">@Aryan0220</Link> </p>
+        <Footer />
       </body>
     </html>
   );
