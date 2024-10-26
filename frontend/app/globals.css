@@ -6,13 +6,24 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@layer utilities {
+  .no-scrollbar::webkit-scrollbar{
+    display: none;
+  }
+
+  .no-scrollbar{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 3.9%;
     --foreground: 216 18% 16%;
     --card: 240 6.1% 12.9%;
     --card-foreground: 0 0% 3.9%;
-    --popover: 0 0% 100%;
+    --popover: 180 45% 35%;
     --popover-foreground: 0 0% 3.9%;
     --primary: 217 10% 25%;
     --primary-foreground: 0 0% 98%;
